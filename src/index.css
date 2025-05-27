@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@layer base {
+  :root {
+    --background: 142 33% 98%;
+    --foreground: 142 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 142 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 10% 15%;
+
+    --primary: 142 50% 45%;
+    --primary-foreground: 144 100% 98%;
+
+    --secondary: 70 65% 88%;
+    --secondary-foreground: 142 10% 15%;
+
+    --muted: 142 10% 92%;
+    --muted-foreground: 142 5% 45%;
+
+    --accent: 70 65% 88%;
+    --accent-foreground: 142 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 10% 88%;
+    --input: 142 10% 88%;
+    --ring: 142 50% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 142 15% 10%;
+    --foreground: 144 100% 98%;
+
+    --card: 142 15% 15%;
+    --card-foreground: 144 100% 98%;
+
+    --popover: 142 15% 15%;
+    --popover-foreground: 144 100% 98%;
+
+    --primary: 142 50% 45%;
+    --primary-foreground: 144 100% 98%;
+
+    --secondary: 70 15% 25%;
+    --secondary-foreground: 144 100% 98%;
+
+    --muted: 142 15% 25%;
+    --muted-foreground: 142 10% 70%;
+
+    --accent: 70 15% 25%;
+    --accent-foreground: 144 100% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 144 100% 98%;
+
+    --border: 142 15% 25%;
+    --input: 142 15% 25%;
+    --ring: 142 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  .map-container {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .map-marker {
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .map-marker:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  .map-marker-active {
+    transform: scale(1.2);
+    z-index: 15;
+  }
+
+  .instagram-post {
+    @apply rounded-lg overflow-hidden shadow-md bg-white;
+    transition: transform 0.2s ease;
+  }
+
+  .instagram-post:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Improved tooltip styles */
+  .poi-tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1000;
+  }
+}

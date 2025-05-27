@@ -18,7 +18,7 @@ const Index = () => {
                 Explore The London Greenway
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Discover East London's 4.3-mile green corridor with our
+                Discover East London's 7-kilometre green corridor with our
                 interactive map and community resources.
               </p>
             </div>

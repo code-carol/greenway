@@ -89,7 +89,7 @@ const InstagramFeed: React.FC = () => {
 
         <p className="text-gray-600 mb-8 max-w-2xl">
           Share your Greenway experiences on Instagram with #LondonGreenway to
-          be featured here and earn rewards for community engagement!
+          be featured here!
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
